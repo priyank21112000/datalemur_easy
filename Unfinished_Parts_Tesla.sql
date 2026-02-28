@@ -1,4 +1,4 @@
-Tesla is investigating production bottlenecks and they need your help to extract the relevant data. Write a query to determine which parts have begun the assembly process but are not yet finished.
+/*Tesla is investigating production bottlenecks and they need your help to extract the relevant data. Write a query to determine which parts have begun the assembly process but are not yet finished.
 
 Assumptions:
 
@@ -9,3 +9,10 @@ This question is straightforward, so let's approach it with simplicity in both t
 Effective April 11th 2023, the problem statement and assumptions were updated to enhance clarity.
 
 Link - https://datalemur.com/questions/tesla-unfinished-parts
+*//
+
+Solution - 
+
+SELECT part, assembly_step
+FROM parts_assembly
+WHERE finish_date is NULL
