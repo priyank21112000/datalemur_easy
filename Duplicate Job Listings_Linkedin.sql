@@ -11,6 +11,8 @@ Duplicate job listings are defined as two job listings within the same company t
 -- Input grain - one row - one job listing
 -- duplicate - same title, job description, appears more than once
 -- output - count of ALL the companies that have duplicate listings
+
+Link to question - https://datalemur.com/questions/duplicate-job-listings
 */
 
 WITH cte1 as
